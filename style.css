@@ -1,0 +1,406 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.header {
+    background-image: url(images/header1.jpg);
+    width: 100%;
+    height: 750px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 20px black;
+}
+
+
+.header_l {
+    width: 50%;
+}
+
+.header_l h1 {
+    color: white;
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 40px;
+
+}
+
+.header_l img {
+    margin-left: 6%;
+    margin-top: 2%;
+    
+}
+
+.header_l ul {
+    color: white;
+    font-size: 30px;
+    margin-left: 5%;
+    list-style: none;
+    margin-top: 2%;
+}
+
+.header_l ul h3 {
+    color: #008bdb;
+}
+
+.main h1{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+}
+
+.main p {
+    font-size: 25px;
+    padding: 0.5% 2% 0% 2%;
+}
+.main .p_sys {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+.bottom {
+    margin-bottom: 2%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    margin-bottom: 4%;
+}
+
+
+
+/*acc*/
+.accordion-container {
+    width: 80%;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.btn {
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+    box-sizing: border-box;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.p_m {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+ul.ul_m {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons_m li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Responsive part*/
+/* Small devices (phones, portrait) */
+
+@media (min-width: 379px) and (max-width: 479px) {
+    /* CSS rules here */
+    .header {
+        height: 850px;
+    }
+    .header_l {
+        width: 100%;
+    }    
+    .header_l h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+        
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 220px;
+        
+    }
+}
+
+@media (max-width: 384px) {
+    /* CSS rules here */
+    .header {
+        height: 900px;
+    }
+    .header_l {
+        width: 100%;
+    }    
+    .header_l h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+        
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 100px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    /* CSS rules here */
+    .header_l {
+        width: 100%;
+    }    
+    .header_l h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 220px;
+        
+    }
+}
+
+@media (min-width: 268px) and (max-width: 378px) {
+    /* CSS rules here */
+    .header {
+        height: 850px;
+    }
+    .header_l {
+        width: 100%;
+    }    
+    .header_l h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+        
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 220px;
+        
+    }
+}
+
+@media (max-width: 267px) {
+    /* CSS rules here */
+    .header {
+        height: 850px;
+    }
+    .header_l {
+        width: 100%;
+    }    
+    .header_l h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+        
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 100px;
+        
+    }
+}
+
+  
+  /* Medium devices (tablets, portrait) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* CSS rules here */
+    .header_l {
+        width: 100%;
+    }
+    .header_l h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 300px;
+    }
+}
+  
+  /* Medium devices (tablets, landscape) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS rules here */
+    .header_l {
+        width: 100%;
+    }
+    .header_l h1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-top: 3%;
+    }
+    .header_l .ICB_logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header_l ul {
+        text-align: center;
+    }
+    .main h1 {
+        text-align: center;
+    }
+    .main p {
+        text-align: center;
+    }
+    .accordion-container {
+        max-width: 80%;
+    }
+    .video {
+        height: 430px;
+    }
+}

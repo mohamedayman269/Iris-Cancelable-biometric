@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link  rel="stylesheet" href="style.css">
+    <title>ICB</title>
+    <link rel="icon" href="images/ICB_LOGO1.png" type="image/png">
+</head>
+<body>
+    <div class="header">
+        <img src="images/CIC_logo.png">
+        <div class="header_l">
+            <h1>Deep Learning-based Iris Cancelable<br>Biometric
+                using Pixel Shuffling<br>&Feature Quantization</h1>
+                <div class="ICB_logo">
+                    <img src="images/ICB_LOGO1.png">
+                </div>
+                <ul>
+                    <li>Darin Ahmed Ali</li>
+                    <li>Shimaa Ibrahim Khalil</li>
+                    <li>Mohamed Ayman Mahmoud</li>
+                    <li>Mohamed Abdelaziz Hassan</li>
+                    <li>Mohamed Ibrahim Abd Al Aleem</li><br>
+                    <li><h3><u>Under Supervision of:</u></h3></li>
+                    <li>Dr.Nariman Abdel Salam</li>
+                </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Abstract</h1>
+        <p>A person only has two irises – if his pattern is stolen, he quickly runs out of alternatives. Thus methods that protect the true iris pattern need to be adopted in practical biometric applications. In particular, it is desirable to have a system that can generate a new unique pattern if the one being used is lost, or generate different unique patterns for different applications to prevent cross-matching. For backwards compatibility, these patterns should look like plausible irises so they can be handled with the same processing tools. However, they should also non-invertible hide the true biometric so it is never exposed, or even stored. Such "cancelable" biometric techniques that function with standard iris recognition systems, either at the unwrapped picture, were employed in this project.</p>
+        <h1>Introduction</h1>
+        <p>Cancelable biometrics serves as an effective countermeasure against various template attacks launched by intruders, safeguarding the biometric system. cancelable approach with a novel feature extraction technique for iris recognition, known as the hybrid architecture of the convolutional neural network (CNN) . To provide cancelability to the system, the project makes use of a random projection technique. The proposed method has the best outcome in terms of accurate identification. The method is validated on two Iris datasets IITD and CASIA, which show promising results on the equal error rate (EER) and accuracy. The proposed model provides 0 EER for IITD and CASIA, respectively, and accuracy 100%, for IITD and CASIA Iris dataset, respectively, which is very high compared to other methodologies. The proposed hybrid architecture is being used for a cancelable biometric system for the first time based on literature review. The efficiency of the proposed method is high when validated on the datasets.</p>
+        <h1>Proposed System</h1>
+        <div class="accordion-container">
+            <div>
+                <div class="buttons_m">
+                    <ul class="ul_m">
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(0)">
+                                Input Biometric <i class="fa-solid fa-angle-up" id="icon-0"></i>
+                            </button>
+                            <div class="accordion-content" id="content-0">
+                                <p class="p_m">The choice fell on the iris as biometric input in our cancelable system, The used iris database is CASIA-V4 interval that consists of 2239 images.</p>
+                                <img src="images/Picture1.png" class="accordion-img" id="accordion-img-0" alt="Image 1">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(1)">
+                                Iris Detection <i class="fa-solid fa-angle-up" id="icon-1"></i>
+                            </button>
+                            <div class="accordion-content" id="content-1">
+                                <p class="p_m">Iris Detection using YOLO-V8, YOLO is currently the most popular real-time object detector and can be widely accepted for the following reasons: (a) lightweight network architecture, (b) effective feature fusion methods, (c) more accurate detection results.</p>
+                                <img src="images/Picture2.png" class="accordion-img" id="accordion-img-1" alt="Image 2">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(2)">
+                                Iris Mask <i class="fa-solid fa-angle-up" id="icon-2"></i>
+                            </button>
+                            <div class="accordion-content" id="content-2">
+                                <p class="p_m">U-Net utilizes an encoder-decoder architecture. The encoder, on the left, is a typical CNN setup, similar to VGG, featuring two 3×3 convolutional layers, ReLU activation, and max pooling. Each down-sampling step doubles feature channels and halves the image resolution. The decoder, on the right, up-samples feature maps and concatenates them with corresponding encoder outputs. This ensures information flow across scales, preventing loss during down-sampling. The network's final layer is a 1×1 convolution that combines output channels to produce segmentation maps.</p>
+                                <img src="images/Picture3.png" class="accordion-img" id="accordion-img-2" alt="Image 3">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(3)">
+                                Iris Localization <i class="fa-solid fa-angle-up" id="icon-3"></i>
+                            </button>
+                            <div class="accordion-content" id="content-3">
+                                <p class="p_m">Iris Localiation using Canny edge and Iris Mask, Iris boundaries are detected by loading the image, converting it to grayscale, applying Gaussian blur, and using Canny edge detection. The edges are then dilated and resized. In the second phase, these detected boundaries are overlaid onto the original images by converting the boundary image to color, applying a binary mask, and overlaying it onto the original image.</p>
+                                <img src="images/Picture4.png" class="accordion-img" id="accordion-img-3" alt="Image 4">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(4)">
+                                Iris Segmentation <i class="fa-solid fa-angle-up" id="icon-4"></i>
+                            </button>
+                            <div class="accordion-content" id="content-4">
+                                <p class="p_m">Iris segmentation extracts highlight of the iris region within each image. By leveraging OpenCV's bitwise operations, it applies these masks to the original images, effectively isolating the iris parts while discarding irrelevant information. The segmented iris images are then saved to an output directory, ensuring that only the iris regions are retained for further analysis or processing.</p>
+                                <img src="images/Picture5.png" class="accordion-img" id="accordion-img-4" alt="Image 5">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(5)">
+                                Feature Extraction <i class="fa-solid fa-angle-up" id="icon-5"></i>
+                            </button>
+                            <div class="accordion-content" id="content-5">
+                                <p class="p_m">The iris, the colored part of the eye, has a complex structure that includes various features that can be used for biometric identification, to enhance noisy remote sensing images and simultaneously extract the edges. Using the implemented Top Hat and Canny edge detector for feature extraction and as an enhancement tool for remote sensing images, the result was robust with a very high enhancement level.</p>
+                                <img src="images/Picture6.png" class="accordion-img" id="accordion-img-5" alt="Image 6">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(6)">
+                                Combination <i class="fa-solid fa-angle-up" id="icon-6"></i>
+                            </button>
+                            <div class="accordion-content" id="content-6">
+                                <p class="p_m">Combine the left and Right Iris using basic Style Transfer Method Calls a placeholder style_transfer function to perform style transfer. In the placeholder function, it simply blends the content and style images.</p>
+                                <img src="images/Picture7.png" class="accordion-img" id="accordion-img-6" alt="Image 7">
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(7)">
+                                Cancelable Editing <i class="fa-solid fa-angle-up" id="icon-7"></i>
+                            </button>
+                            <div class="accordion-content" id="content-7">
+                                <p class="p_m">The Pixel Shuffling technique used to create a cancelable template by creating new pixels using the new created feature maps and then rearrange the new pixels by applying the upscale technique.</p>
+                                <div class="cancel_img"><img src="images/Picture8.png" class="accordion-img" id="accordion-img-7" alt="Image 8"></div>
+                                <p class="p_m">Feature quantization reduces complex features from iris images for creating secure, cancelable biometric templates using K-Means clustering for quantization. The technique converts biometric data into an irreversible, protected format to prevent theft.</p>
+                                <div class="cancel_img"><img src="images/Picture9.png" class="accordion-img" id="accordion-img-8" alt="Image 9"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" onclick="toggleAccordion(8)">
+                                Matching (SSIM) <i class="fa-solid fa-angle-up" id="icon-8"></i>
+                            </button>
+                            <div class="accordion-content" id="content-8">
+                                <p class="p_m">Structural Similarity Index (SSIM) is a metric used to measure the similarity between two images. It evaluates the perceived quality of an image by comparing its structural information with a reference image. The SSIM index is usually represented as a value between 0 and 1, where 1 indicates perfect similarity and vice versa.</p>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1>Conclusion</h1>
+        <p class="bottom">In conclusion, The developed iris cancelable biometric model successfully enhances security by transforming the original iris features into a non-invertible, revocable format. This ensures that even if the transformed data is compromised, the original biometric information remains protected. The model demonstrates robust performance, maintaining high accuracy and low error rates while effectively safeguarding against potential attacks. These features make it a promising solution for secure and reliable biometric authentication systems.</p>
+        <h1>GUI</h1>
+        <div class="video">
+            <video controls src="video/GUI.mp4"></video>
+        </div>
+    </div>
+    <script src="main1.js">
+    </script>
+</body>
+</html>
